@@ -1,4 +1,10 @@
+@import "_reset.scss";
+
 @import "font.scss";
+@import "card.scss";
+@import "menu.scss";
+@import "submenu.scss";
+@import "benefit.scss";
 
 body{
     font-family: "SF Text";
@@ -9,154 +15,8 @@ a{
     text-decoration: none;
 }
 
-.container{
-    width: 1224px;
-    margin: 0 auto;
-}
-
-
-nav{
-    height: 88px;
-    width: 100%;
-    background-color:#1565c0;
-}
-nav .container{
-    padding: 16px 0px;
-    display: flex;
-}
-
-nav .nav-item{
-    display: flex;
-    align-items: center;
-}
-
-
-.navbar-brand{
-    margin-right: 40px;
-}
-
-.collapse{
-    font-size: 18px;
-    margin-right: auto!important;
-}
-
-.nav-item-right{
-    margin-right: 0px;
-    border: 2px solid #fff;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 4px;
-    text-transform: uppercase;
-    padding: 20px 24px;
-}
-
-.submenu{
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.submenu ul{
-    padding: 25px 0px;
-}
-.submenu li{
-    display: inline;
-    padding: 0px 16px;
-}
-
-.submenu li:first-child{
-    padding-left: 0px;
-}
-.submenu li:last-child{
-    padding-right: 0px;
-}
-
-.submenu li a{
-    color: #1e88e5;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-.row{
-    display: flex;
-    width: 100%;
-    margin-left: -20px;
-    margin-right: -20px;
-}
-.md-7,.md-3{
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.md-7{
-    width: 70%;
-}
-.md-3{
-    width: 30%;
-}
-
-.image{
-    float: left;
-}
-.content{
-    float: left;
-    padding: 34px 20px;
-}
-.subtitle{
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.38);
-}
-.title{
-    margin-bottom: 15px;
-    font-size: 49px;
-    font-weight: 900;
-    color: rgba(0, 0, 0, 0.87);
-}
-
-.star{
-    float: left;
-    width: 16px;
-    height: 16px;
-    background-repeat: no-repeat;
-    background-image: url(../img/inteira.png)
-}
-.count-rating{
-    color: #1565c0;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.button{
-    width: 100%;
-    height: 64px;
-    position: relative;
-}
-.button-content{
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    background-image: linear-gradient(to right, #9ccc65 , #43a047);
-    z-index: 2;
-    border-radius: 4px;
-}
-.button-content .text{
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.button-shadow{
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    background-color: red;
-    border-radius: 4px;
-    left: 0px;
-    bottom: 0px;
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1254px;
+    }
 }

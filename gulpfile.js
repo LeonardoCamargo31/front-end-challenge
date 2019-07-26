@@ -74,7 +74,7 @@ gulp.task('server', function () {
             .pipe(csslint.reporter());
     });  
 
-    gulp.watch('src/sass/**/*.scss').on('change', function (event) {
+    gulp.watch('src/sass/main.scss').on('change', function (event) {
         gulp.src(event.path)
             .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
             .pipe(autoprefixer(autoprefixerOptions))

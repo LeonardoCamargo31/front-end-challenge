@@ -1,0 +1,187 @@
+.box-card{
+
+}
+.card-info{
+    padding-top: 65px;
+    .image{
+        float: left;
+    }
+    .content{
+        float: left;
+        padding: 34px 40px;
+
+        .subtitle{
+            letter-spacing: 0.3px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.38);
+            img{
+                margin-left: 10px;
+            }
+        }
+        .title{
+            margin-bottom: 15px;
+            font-size: 38px;
+            line-height: 49px;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.87);
+        }
+    }
+
+}
+
+
+.star{
+    float: left;
+    margin: 0px 2.5px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(../img/inteira.png)
+}
+.star:first-child{
+    margin-left: 0px;
+}
+.star:last-child{
+    margin-right: 0px;
+}
+
+.count-rating{
+    float: left;
+    margin-left: 15px;
+    color: #1565c0;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+.card-discover{
+    padding-top: 65px;
+}
+.card-discover-people{
+    .people{
+        margin-left: -8px;
+        float: left;
+        width: 28px;
+        height: 28px;
+        border: solid 2px #ffffff;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .count{
+        float: left;
+        display: table;
+        padding: 6px 12px;
+        margin-left: -8px;
+        border-radius: 16px;
+        background-color: #f4f4f7;
+        border: solid 2px #ffffff;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .text{
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.button{
+    width: 100%;
+    height: 64px;
+    position: relative;
+}
+.button-content{
+    padding: 0px 20px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-image: linear-gradient(to right, #9ccc65 , #43a047);
+    z-index: 2;
+    border-radius: 4px;
+}
+.button-content .icon{
+    width: 20%;
+    float: left;
+}
+.button-content .text{
+    width: 80%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.button-shadow{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    background-image: linear-gradient(to right, #78a44d , #3a8037);
+    border-radius: 4px;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+
+.card-bottom{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.card-features{
+    
+}
+
+.card-features-item{
+    float: left;
+    .image{
+        float: left;
+    }
+    .content{
+        float: left;
+        font-size: 16px;
+        .title{
+            color: rgba(0, 0, 0, 0.87);
+        }
+        p{
+            color: rgba(0, 0, 0, 0.38)
+        }
+    }
+    
+}
+
+
+.card-score{
+    width: 100%;
+    border: solid 2px #f4f4f7;
+    padding: 22px 25px;
+    display: table;
+    border-radius: 4px;
+    .image{
+        float: left;
+    }
+    .content{
+        float: left;
+        p{
+            color: rgba(0,0,0,0.38);
+            span{
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            a{
+                color: #1e88e5;
+            }
+        }
+    }
+}
