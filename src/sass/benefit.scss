@@ -1,4 +1,5 @@
 .benefit{
+    font-family: 'Roboto', sans-serif;
     padding: 30px 130px;
     background-color: #f4f4f7;
 }
@@ -9,7 +10,7 @@
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
         background-color: #fff;
-        padding: 30px 50px;
+        padding: 32.5px 50px;
         .title{
             margin-bottom: 20px;
             font-weight: 700;
@@ -31,14 +32,18 @@
         .benefit-item-footer-bank{
             float: left;
             color: #646464;
+            line-height: 33px;
         }
-        .btn-small{
+        .button-small{
+            padding: 9px 0px;
             min-width: 200px;
             float: right;
             background-color: #0053f9;
             border-radius: 3px;
             font-size: 15px;
             color: #fff;
+            font-weight: 700;
+            text-align: center;
             text-transform: uppercase;
         }
     }

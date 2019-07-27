@@ -1,5 +1,5 @@
 .submenu{
-    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 1px 0 0 #e0e0e0;
 }
 
 .submenu ul{
@@ -20,5 +20,7 @@
 .submenu li a{
     color: #1e88e5;
     font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
     text-transform: uppercase;
 }
