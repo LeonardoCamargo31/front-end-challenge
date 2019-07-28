@@ -1,17 +1,28 @@
+
+var subMenu = document.getElementsByClassName("sub-menu")[0];
+var dropdown = document.getElementsByClassName("nav-item-dropdown")[0]
+var overlay = document.getElementsByClassName("overlay")[0]
+
 //Retorna uma lista de elementos presentes no documento
-var allHasChildren = document.querySelectorAll(".collapse a");
-console.log(allHasChildren)
-for (var x = 0; x < allHasChildren.length; x++) {
-    allHasChildren[x].onclick = function() {
-        var subMenu = this.parentNode.getElementsByClassName("sub-menu")[0];
-        
-        if (subMenu.classList.contains('selected')) {
-            subMenu.classList.remove("selected");
-            document.getElementsByClassName("overlay")[0].style.display="none"
-            
-        } else {
-            subMenu.classList.add("selected");
-            document.getElementsByClassName("overlay")[0].style.display="block";
-        }
+var dropdownToggle = document.getElementsByClassName("nav-item-dropdown-toggle")[0];
+
+dropdownToggle.onclick = function () {
+    //contem a classe selected, então fecho o dropdown
+    if (subMenu.classList.contains('selected')) {
+        close()
+    } else {
+        open()
     }
+}
+
+function close() {
+    subMenu.classList.remove("selected");
+    dropdown.classList.remove("selected");
+    overlay.style.display = "none"
+}
+
+function open() {
+    subMenu.classList.add("selected");
+    dropdown.classList.add("selected");
+    overlay.style.display = "block";
 }

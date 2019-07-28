@@ -10,6 +10,7 @@ var jshint = require('gulp-jshint')
 var jshintStylish = require('jshint-stylish')
 var csslint = require('gulp-csslint')
 var sass = require('gulp-sass')
+var babel  =require('gulp-babel')
 
 var autoprefixerOptions = {
     browsers: ['last 2 versions'],
@@ -20,6 +21,7 @@ gulp.task('default', ['copy'], function () {
     //todas vão ser execultadas ao mesmo tempo, já que não tem dependencia entre elas
     gulp.start('build-img', 'usemin')
 })
+
 
 //tarefa para copiar arquivos de src para dist
 gulp.task('copy', ['clean'], function () {//[] a dependencia da tarefa
@@ -62,9 +64,9 @@ gulp.task('server', function () {
     gulp.watch('src/**/*').on('change', browserSync.reload);
 
     gulp.watch('src/js/*.js').on('change',function (event) {
-        gulp.src(event.path)
-            .pipe(jshint())
-            .pipe(jshint.reporter(jshintStylish));//responsavel por exibir o erro no terminal
+        gulp.src('src/js/app.js')
+            .pipe(babel({presets:['es2015']}))
+            .pipe(gulp.dest('src/js/dist'))
     });
 
     gulp.watch('src/css/**/*.css').on('change', function(event) {

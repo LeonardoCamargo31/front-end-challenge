@@ -1,3 +1,22 @@
-div{
-    background-color:red
+@import "_reset.scss";
+
+@import "font.scss";
+@import "card.scss";
+@import "menu.scss";
+@import "submenu.scss";
+@import "benefit.scss";
+
+body{
+    font-family: "SF Text";
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1254px;
+    }
 }

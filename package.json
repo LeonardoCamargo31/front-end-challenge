@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/LeonardoCamargo31/front-end-challenge#readme",
   "devDependencies": {
+    "babel-preset-es2015": "6.5.0",
     "browser-sync": "2.26.3",
     "gulp": "3.9.0",
     "gulp-autoprefixer": "^3.0.2",
+    "gulp-babel": "6.1.2",
     "gulp-clean": "0.3.1",
     "gulp-concat": "2.6.0",
     "gulp-csslint": "^0.2.0",
@@ -28,9 +30,9 @@
     "gulp-html-replace": "1.5.4",
     "gulp-imagemin": "2.3.0",
     "gulp-jshint": "^1.11.2",
+    "gulp-sass": "4.0.2",
     "gulp-uglify": "1.4.1",
     "gulp-usemin": "0.3.14",
-    "jshint-stylish": "^2.0.1",
-    "gulp-sass": "4.0.2"
+    "jshint-stylish": "^2.0.1"
   }
 }
