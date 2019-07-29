@@ -1,6 +1,6 @@
 .benefit{
     font-family: 'Roboto', sans-serif;
-    padding: 30px 130px;
+    padding: 30px 130px 40px 130px;
     background-color: #f4f4f7;
 }
 .benefit-item{
@@ -45,6 +45,51 @@
             font-weight: 700;
             text-align: center;
             text-transform: uppercase;
+        }
+    }
+}
+
+//tamanho maximo 1200px
+@media screen and (max-width: $break-large) {
+    .benefit{
+        padding: 30px 70px 40px 70px;
+    }
+}
+
+//tamanho maximo 992px
+@media screen and (max-width: $break-medium) {
+    .benefit{
+        padding: 30px 30px 40px 30px;
+    }
+}
+
+@media screen and (max-width: $break-small) {
+    .benefit{
+        padding: 40px 0px;
+        background-color: transparent;
+    }
+    .benefit-item{
+        border: solid 1px #ededed;
+        .benefit-item-content{
+            padding: 30px 20px;
+            .title{
+                font-size: 30px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .benefit-item-footer{
+            padding: 15px 20px;
+            .benefit-item-footer-bank{
+                float: left;
+                width: 50%;
+            }
+            .button-small{
+                float: left;
+                min-width: auto;
+                width: 50%;
+            }
         }
     }
 }

@@ -26,3 +26,33 @@ function open() {
     dropdown.classList.add("selected");
     overlay.style.display = "block";
 }
+
+
+
+var button = document.getElementById('hamburger-menu')
+var span = button.getElementsByTagName('span')[0];
+var collapse =document.getElementsByClassName('nav-collapse')[0]
+button.onclick = function (e) {
+
+    if (span.classList.contains('hamburger-menu-button-close')) {
+    
+        console.log('fechar')
+        closeMenuResponsive()
+    } else {
+        console.log('abrir')
+        openMenuResponsive()
+
+    }
+};
+
+function closeMenuResponsive() {
+    span.classList.remove('hamburger-menu-button-close');
+    collapse.classList.remove("selected");
+    overlay.style.display = "none"
+}
+
+function openMenuResponsive() {
+    span.classList.add('hamburger-menu-button-close');
+    collapse.classList.add("selected");
+    overlay.style.display = "block";
+}

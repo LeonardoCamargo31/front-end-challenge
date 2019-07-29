@@ -24,3 +24,13 @@
     letter-spacing: 0.3px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: $break-small) {
+    .submenu {
+        overflow: hidden;
+    }
+    .submenu ul{
+        width: 5000px;
+        
+    }
+}

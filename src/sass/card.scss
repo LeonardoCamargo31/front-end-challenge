@@ -3,16 +3,15 @@
 .card-info {
   padding-top: 65px;
   .image {
-    
     float: left;
-    img{
-        border-radius: 15px;
-        box-shadow: 0px 0px 24px 0px rgba(59,59,59,0.6);
+    img {
+      border-radius: 15px;
+      box-shadow: 0px 0px 24px 0px rgba(59, 59, 59, 0.6);
     }
   }
   .content {
     float: left;
-    padding: 34px 40px;
+    padding: 34px 0px 34px 40px;
 
     .subtitle {
       letter-spacing: 0.3px;
@@ -65,7 +64,7 @@
   padding-top: 30px;
 }
 .card-discover-arrow {
-    line-height: 16px;
+  line-height: 16px;
   color: #f4511e;
   font-style: italic;
   width: 50%;
@@ -73,16 +72,15 @@
   margin-bottom: 39px;
   position: relative;
 }
-.card-discover-arrow::before{
-    position: absolute;
-    content: '';
-    top: 25px;
-    left: -60px;
-    width: 44px;
-    height: 45px;
-    background-image: url('../img/arrow.png');
-    background-repeat: no-repeat;
-
+.card-discover-arrow::before {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: -60px;
+  width: 44px;
+  height: 45px;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
 }
 
 .card-discover-people {
@@ -92,12 +90,17 @@
   .item {
     float: left;
     &:first-child {
-      width: 140px;
+      width: max-content;
+      .content{
+        display: flex;
+        width: max-content;
+      }
     }
     &:last-child {
-      width: 240px;
+      width: auto;
     }
   }
+
   .people {
     margin-top: 1px;
     margin-left: -8px;
@@ -133,7 +136,7 @@
 }
 
 .button {
-    display: table;
+  display: table;
   width: 100%;
   height: 64px;
   position: relative;
@@ -176,17 +179,17 @@
   padding-top: 45px;
   padding-bottom: 45px;
 }
-.card-features {
-}
+
 
 .card-features-item {
   float: left;
+  display: flex;
   .image {
-    width: 40px;
+    width: max-content;
     float: left;
   }
   .content {
-    width: 139px;
+    width: auto;
     float: left;
     font-size: 16px;
     .title {
@@ -229,7 +232,7 @@
         position: absolute;
         content: "";
         right: -24px;
-        top: -2px;
+        bottom: -3px;
         width: 24px;
         height: 24px;
         background-image: url("../img/link.png");
@@ -244,4 +247,97 @@
       }
     }
   }
+}
+
+//tamanho maximo 1200px
+@media screen and (max-width: $break-large) {
+  .card-info .content{
+    padding: 34px 0px 34px 20px;
+    .title{
+      font-size: 26px;
+      line-height: 38px;
+    }
+  }
+  .card-discover-arrow{
+    width: 60%;
+  }
+
+  .card-features-item{
+    padding-left: 5px;
+    padding-right: 5px;
+    &:first-child{
+      padding-left: 15px;
+    }
+  }
+}
+//tamanho maximo 992px
+@media screen and (max-width: $break-medium) {
+  
+}
+
+
+//tamanho maximo 768px
+@media screen and (max-width: $break-small) {
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-info{
+    padding-top: 0px;
+  }
+  .card-info .image {
+    order: 2;
+  }
+  .card-info .content {
+    padding: 30px 0px;
+    order: 1;
+    .title{
+      font-size: 24px;
+      line-height: 38px;
+    }
+    .rating{
+      width: 100%;
+      display: table;
+      .rating-stars{
+        padding-right: 8px;
+        width: 50%;
+        float: left;
+        .star{
+          float: right;
+        }
+      }
+      .count-rating{
+        width: 50%;
+        float: left;
+        text-align: left;
+        margin-left: 0px;
+        padding-left: 8px;
+      }
+    }
+    
+  }
+
+  .card-bottom{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .card-features{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .card-features-item{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+
+
+  .card-discover-arrow{
+    display: none;
+  }
+
+  
 }

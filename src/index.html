@@ -7,7 +7,8 @@
 
 
     <!-- build:css css/index.min.css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
 </head>
@@ -17,48 +18,61 @@
     <header>
         <nav class="menu">
             <div class="container">
+                <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button">
+                    <span class="hamburger-menu-button-open">Menu</span>
+                </button>
                 <div class="nav-item">
                     <a href="#" class="navbar-brand">
                         <img src="img/logo.png">
                     </a>
                 </div>
-                <div class="nav-item nav-item-dropdown">
-                    <a class="nav-item-dropdown-toggle" href="#0">
-                        <span>Cartões de crédito</span>
-                        <img src="img/topo.png" />
-                    </a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#0">
-                                <span class="blue">Cartões de crédito</span>
-                                <p>Acumule milhas, anuidade grátis…</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0">
-                                <span class="orange">Contas digitais</span>
-                                <p>Mensalidade grátis, saques grátis…</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0">
-                                <span class="green">Máquinas de pagamento</span>
-                                <p>Aluguel, compra, com 3G, wifi…</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0">
-                                <span class="light-blue">Empréstimos</span>
-                                <p>Pessoal, para negativados…</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#" class="nav-item nav-item-right">
-                    <div class="nav-button">
-                        Descubra seu score grátis
+                <div class="nav-collapse">
+                    <div class="nav-item nav-item-dropdown">
+                        <a class="nav-item-dropdown-toggle" href="#0">
+                            <span>Cartões de crédito</span>
+                            <img src="img/topo.png" />
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#0">
+                                    <div class="content">
+                                        <span class="blue">Cartões de crédito</span>
+                                        <p>Acumule milhas, anuidade grátis…</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <div class="content">
+                                        <span class="orange">Contas digitais</span>
+                                        <p>Mensalidade grátis, saques grátis…</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <div class="content">
+                                        <span class="green">Máquinas de pagamento</span>
+                                        <p>Aluguel, compra, com 3G, wifi…</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <div class="content">
+                                        <span class="light-blue">Empréstimos</span>
+                                        <p>Pessoal, para negativados…</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
+                    <a href="#" class="nav-item nav-item-right">
+                        <div class="nav-button">
+                            Descubra seu score grátis
+                        </div>
+                    </a>
+                </div>
             </div>
         </nav>
         <div class="submenu">
@@ -76,7 +90,7 @@
     <div class="container">
         <section class="box-card">
             <div class="row">
-                <div class="col-md-8 card-info">
+                <div class="col-md-8 col-sm-6 card-info">
                     <div class="image">
                         <img src="img/cart-o.png">
                     </div>
@@ -95,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 card-discover">
+                <div class="col-md-4 col-sm-6 card-discover">
                     <div class="card-discover-arrow">Economize tempo e descubra suas chances de aprovação</div>
                     <a href="#" class="button">
                         <div class="button-content">
@@ -108,10 +122,12 @@
                     </a>
                     <div class="card-discover-people">
                         <div class="item">
-                            <div class="people"><img src="https://placeimg.com/50/50/people"></div>
-                            <div class="people"><img src="https://placeimg.com/50/50/people"></div>
-                            <div class="people"><img src="https://placeimg.com/50/50/people"></div>
-                            <div class="count">+10 mil</div>
+                            <div class="content">
+                                <div class="people"><img src="https://placeimg.com/50/50/people"></div>
+                                <div class="people"><img src="https://placeimg.com/50/50/people"></div>
+                                <div class="people"><img src="https://placeimg.com/50/50/people"></div>
+                                <div class="count">+10 mil</div>
+                            </div>
                         </div>
                         <div class="item">
                             <div class="text">Pessoas descobriram se podem ter o cartão antes de solicitar.</div>
@@ -120,9 +136,9 @@
                 </div>
             </div>
             <div class="row card-bottom">
-                <div class="col-md-8 card-features">
+                <div class="col-md-8 col-sm-12 card-features">
                     <div class="row">
-                        <div class="col-md-3 card-features-item">
+                        <div class="col-md-3 col-sm-6 card-features-item">
                             <div class="image">
                                 <img src="img/info.png">
                             </div>
@@ -131,7 +147,7 @@
                                 <p>4x R$ 88,50</p>
                             </div>
                         </div>
-                        <div class="col-md-3 card-features-item">
+                        <div class="col-md-3 col-sm-6 card-features-item">
                             <div class="image">
                                 <img src="img/info.png">
                             </div>
@@ -140,7 +156,7 @@
                                 <p>R$ 1.500</p>
                             </div>
                         </div>
-                        <div class="col-md-3 card-features-item">
+                        <div class="col-md-3 col-sm-6 card-features-item">
                             <div class="image">
                                 <img src="img/app.png">
                             </div>
@@ -149,7 +165,7 @@
                                 <p>para controlar seus gastos </p>
                             </div>
                         </div>
-                        <div class="col-md-3 card-features-item">
+                        <div class="col-md-3 col-sm-6 card-features-item">
                             <div class="image">
                                 <img src="img/milhas.png">
                             </div>
@@ -160,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="card-score">
                         <div class="image">
                             <img src="img/3.png">
