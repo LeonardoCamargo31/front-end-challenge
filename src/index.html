@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <title>Front-end Challenge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
 
     <!-- build:css css/index.min.css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
 </head>
@@ -76,7 +76,7 @@
         </nav>
         <div class="submenu">
             <div class="container">
-                <ul class="item">
+                <ul class="item my-slider" >
                     <li><a href="#">Cartões para negativados</a></li>
                     <li><a href="#">Cartões sem anuidade</a></li>
                     <li><a href="#">Cartões com milhas</a></li>
@@ -91,11 +91,11 @@
             <div class="row">
                 <div class="col-md-8 col-sm-12 card-info">
                     <div class="image">
-                        <img src="img/cart-o.png">
+                        <img id="cardImage" src="img/cart-o.png">
                     </div>
                     <div class="content">
                         <div class="subtitle">Cartão de crédito<img src="img/visa.png" /></div>
-                        <div class="title">Santander Smiles Gold</div>
+                        <div class="title" id="cardName">Santander Smiles Gold</div>
                         <div class="rating">
                             <div class="rating-stars">
                                 <div class="star"></div>
@@ -104,7 +104,7 @@
                                 <div class="star"></div>
                                 <div class="star"></div>
                             </div>
-                            <div class="count-rating">2 avaliações</div>
+                            <div id="totalReviews" class="count-rating">2 avaliações</div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="content">
                                 <div class="title">Anuidade</div>
-                                <p>4x R$ 88,50</p>
+                                <p id="annuity">4x R$ 88,50</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6 card-features-item">
@@ -154,7 +154,7 @@
                             </div>
                             <div class="content">
                                 <div class="title">Renda mínima</div>
-                                <p>R$ 1.500</p>
+                                <p id="minimumIncome">R$ 1.500</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6 card-features-item">
@@ -205,8 +205,9 @@
         </section>
     </div>
     <!-- build:js js/index.min.js -->
+    <script src="js/tiny-slider.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/dist/app.js"></script>
+    <script src="js/app.js"></script>
     <!-- endbuild -->
 </body>
 

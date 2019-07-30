@@ -31,11 +31,11 @@ function open() {
 
 var button = document.getElementById('hamburger-menu')
 var span = button.getElementsByTagName('span')[0];
-var collapse =document.getElementsByClassName('nav-collapse')[0]
+var collapse = document.getElementsByClassName('nav-collapse')[0]
 button.onclick = function (e) {
 
     if (span.classList.contains('hamburger-menu-button-close')) {
-    
+
         console.log('fechar')
         closeMenuResponsive()
     } else {
@@ -56,3 +56,13 @@ function openMenuResponsive() {
     collapse.classList.add("selected");
     overlay.style.display = "block";
 }
+
+
+var slider = tns({
+    mouseDrag: true,
+    controls: false,
+    nav: false,
+    loop: false,
+    container: '.my-slider',
+    autoWidth: true
+});
