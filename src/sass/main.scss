@@ -5,21 +5,29 @@ $break-small: 768px;
 $break-medium: 992px;
 $break-large: 1280px;
 
+$color-blue:#1565c0;
+$color-blue-secondary:#0053f9;
+
+.transition{
+    transition: all .3s;
+}
 
 @import "_reset.scss";
+@import "_font.scss";
 
-@import "font.scss";
 @import "card.scss";
 @import "menu.scss";
+@import "menu-hamburger.scss";
 @import "submenu.scss";
 @import "benefit.scss";
 
 body{
     font-family: "SF Text";
+    font-weight: 400;
     font-size: 14px;
 }
 
-a{
+a,a:hover,a:focus{
     text-decoration: none;
 }
 

@@ -38,7 +38,7 @@
             padding: 9px 0px;
             min-width: 200px;
             float: right;
-            background-color: #0053f9;
+            background-color: $color-blue-secondary;
             border-radius: 3px;
             font-size: 15px;
             color: #fff;
@@ -63,9 +63,11 @@
     }
 }
 
+//tamanho maximo 768px
 @media screen and (max-width: $break-small) {
     .benefit{
-        padding: 40px 0px;
+        padding: 0px;
+        padding-bottom: 40px;
         background-color: transparent;
     }
     .benefit-item{

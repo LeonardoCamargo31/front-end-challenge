@@ -1,8 +1,10 @@
 .submenu{
+    overflow: hidden;
     box-shadow: 0 1px 0 0 #e0e0e0;
 }
 
 .submenu ul{
+    width: 5000px;
     padding: 25px 0px;
 }
 .submenu li{
@@ -26,11 +28,5 @@
 }
 
 @media screen and (max-width: $break-small) {
-    .submenu {
-        overflow: hidden;
-    }
-    .submenu ul{
-        width: 5000px;
-        
-    }
+    
 }
