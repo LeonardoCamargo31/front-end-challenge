@@ -1,6 +1,6 @@
 # Foregon Front End Developer
 
-Projeto realizado como teste para a Foregon, os arquivos finais então em /dist
+Projeto realizado como teste para a Foregon, os arquivos finais estão em /dist
 
 **Executar projeto**
 
