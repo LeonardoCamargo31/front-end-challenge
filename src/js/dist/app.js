@@ -17,22 +17,43 @@ var api = async function api() {
     });
 };
 
-// const data = api().then(response => {
-//     console.log(response)
-//     var cardName = document.getElementById('cardName')
-//     var cardImage = document.getElementById('cardImage')
-//     var totalReviews = document.getElementById('totalReviews')
-//     var averageScore = document.getElementById('averageScore')
-//     var annuity = document.getElementById('annuity')
-//     var minimumIncome = document.getElementById('minimumIncome')
+var processStars = function processStars(rating) {
+    var newStars = '';
+    for (var i = 0; i < rating; i++) {
+        newStars += '<div class="star"></div>';
+    }
+    return newStars;
+};
 
-//     cardName.textContent = response.name
-//     cardImage.src=response.imageUrl
+var processMoney = function processMoney(money) {
+    return "R$ " + money.toLocaleString('pt-BR');
+};
 
-//     totalReviews.textContent = response.rating.total_reviews
-//     //averageScore.textContent = response.rating.total_reviews
+var data = api().then(function (response) {
+    console.log(response);
+    var cardName = document.getElementById('cardName');
+    var cardImage = document.getElementById('cardImage');
+    var totalReviews = document.getElementById('totalReviews');
+    var annuity = document.getElementById('annuity');
+    var minimumIncome = document.getElementById('minimumIncome');
+    var stars = document.getElementsByClassName('rating-stars')[0];
 
-//     annuity.textContent = response.firstAnnuity.textFormatted
-//     minimumIncome.textContent = response.valueOfMinimalIncomeRequired
+    cardName.textContent = response.name;
+    cardImage.src = response.imageUrl;
 
-// });
+    //estrelas
+    var newStars = processStars(response.rating.average_score);
+    stars.innerHTML = newStars;
+
+    //avaliações
+    var total = response.rating.total_reviews;
+    total += " avaliações";
+    totalReviews.textContent = total;
+
+    //anuidade
+    annuity.textContent = response.firstAnnuity.textFormatted;
+
+    //Renda mínima
+    var money = processMoney(response.valueOfMinimalIncomeRequired);
+    minimumIncome.textContent = money;
+});

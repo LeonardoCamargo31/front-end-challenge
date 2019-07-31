@@ -57,7 +57,6 @@ function openMenuResponsive() {
     overlay.style.display = "block";
 }
 
-
 var slider = tns({
     mouseDrag: true,
     controls: false,

@@ -1,12 +1,11 @@
-.box-card {
-}
 .card-info {
   padding-top: 65px;
+  display: flex;
+  align-items: center;
   .image {
     float: left;
-    max-width: 272px;
-    margin: 0 auto;
-    display: table;
+    max-width: 270px;
+    opacity: 0.9;
     img {
       border-radius: 15px;
       max-width: 100%;
@@ -15,8 +14,8 @@
   }
   .content {
     float: left;
-    padding: 34px 0px 34px 40px;
-
+    padding-left: 40px;
+    max-width: 533px;
     .subtitle {
       letter-spacing: 0.3px;
       margin-bottom: 10px;
@@ -24,7 +23,7 @@
       line-height: 12px;
       font-weight: 700;
       text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.38);
+      color:  $color-black-secondary;
       img {
         margin-left: 10px;
       }
@@ -34,7 +33,7 @@
       font-size: 38px;
       line-height: 49px;
       font-weight: 900;
-      color: rgba(0, 0, 0, 0.87);
+      color: $color-black;
     }
   }
 }
@@ -69,7 +68,7 @@
 }
 .card-discover-arrow {
   line-height: 16px;
-  color: #f4511e;
+  color: $color-red;
   font-style: italic;
   width: 50%;
   float: right;
@@ -198,11 +197,11 @@
     font-size: 16px;
     .title {
       line-height: 32px;
-      color: rgba(0, 0, 0, 0.87);
+      color: $color-black
     }
     p {
       line-height: 22px;
-      color: rgba(0, 0, 0, 0.38);
+      color: $color-black-secondary;
     }
   }
 }
@@ -223,7 +222,7 @@
     float: left;
     p {
       font-weight: 700;
-      color: rgba(0, 0, 0, 0.38);
+      color:  $color-black-secondary;
       span {
         color: rgba(0, 0, 0, 0.6);
       }
@@ -271,6 +270,26 @@
     padding-right: 5px;
     &:first-child{
       padding-left: 15px;
+    }
+  }
+
+  .card-score{
+    padding: 10px 10px;
+    .image{
+      margin-right: 15px;
+    }
+    .content{
+      p{
+        a::after {
+          bottom: -4px;
+        }
+        &:first-child {
+          font-size: 11px;
+        }
+        &:last-child {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
@@ -328,6 +347,7 @@
     padding-bottom: 15px;
     .card-features-item{
       padding-top: 15px;
+      min-height: 110px;
       padding-bottom: 15px;
     }
   }
@@ -335,8 +355,6 @@
   .card-score .content p a::after{
     display: none;
   }
-
-
   .card-discover{
     padding-top: 30px;
   }
@@ -347,6 +365,4 @@
   .card-discover-arrow{
     display: none;
   }
-
-  
 }

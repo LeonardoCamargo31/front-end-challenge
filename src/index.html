@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Front-end Challenge</title>
+    <title>Teste Foregon - Front-end Challenge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Projeto realizado como teste para a Foregon" name="description">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
-
-    <!-- build:css css/index.min.css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
 </head>
-
 <body>
     <div class="overlay"></div>
     <header>
@@ -24,42 +22,42 @@
                 </button>
                 <div class="nav-item">
                     <a href="#" class="navbar-brand">
-                        <img src="img/logo.png">
+                        <img src="img/logo.png" title="Logo Foregon" alt="Logo Foregon"/>
                     </a>
                 </div>
                 <div class="nav-collapse">
                     <div class="nav-item nav-item-dropdown transition">
                         <a class="nav-item-dropdown-toggle" href="#0">
                             <span>Cartões de crédito</span>
-                            <img src="img/topo.png" />
+                            <img src="img/topo.png" title="Ícone topo" alt="Ícone topo"/>
                         </a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="#0">
+                            <li class="transition">
+                                <a href="#" title="Cartões de crédito">
                                     <div class="content">
                                         <span class="blue">Cartões de crédito</span>
                                         <p>Acumule milhas, anuidade grátis…</p>
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#0">
+                            <li class="transition">
+                                <a href="#" title="Contas digitais">
                                     <div class="content">
                                         <span class="orange">Contas digitais</span>
                                         <p>Mensalidade grátis, saques grátis…</p>
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#0">
+                            <li class="transition">
+                                <a href="#" title="Máquinas de pagamento">
                                     <div class="content">
                                         <span class="green">Máquinas de pagamento</span>
                                         <p>Aluguel, compra, com 3G, wifi…</p>
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#0">
+                            <li class="transition">
+                                <a href="#" title="Empréstimos">
                                     <div class="content">
                                         <span class="light-blue">Empréstimos</span>
                                         <p>Pessoal, para negativados…</p>
@@ -68,7 +66,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="nav-item nav-item-right transition">
+                    <a href="#" title="Descubra seu score grátis" class="nav-item nav-item-right transition">
                         Descubra seu score grátis
                     </a>
                 </div>
@@ -76,12 +74,12 @@
         </nav>
         <div class="submenu">
             <div class="container">
-                <ul class="item my-slider" >
-                    <li><a href="#">Cartões para negativados</a></li>
-                    <li><a href="#">Cartões sem anuidade</a></li>
-                    <li><a href="#">Cartões com milhas</a></li>
-                    <li><a href="#">Cartões com milhas</a></li>
-                    <li><a href="#">Cartões com mais benefícios</a></li>
+                <ul class="item my-slider">
+                    <li><a href="#" title="Cartões para negativados">Cartões para negativados</a></li>
+                    <li><a href="#" title="Cartões sem anuidade">Cartões sem anuidade</a></li>
+                    <li><a href="#" title="Cartões com milhas">Cartões com milhas</a></li>
+                    <li><a href="#" title="Cartões com milhas">Cartões com milhas</a></li>
+                    <li><a href="#" title="Cartões com mais benefícios">Cartões com mais benefícios</a></li>
                 </ul>
             </div>
         </div>
@@ -91,11 +89,13 @@
             <div class="row">
                 <div class="col-md-8 col-sm-12 card-info">
                     <div class="image">
-                        <img id="cardImage" src="img/cart-o.png">
+                        <img id="cardImage" src="img/cartao.png" title="Cartão" alt="Cartão">
                     </div>
                     <div class="content">
-                        <div class="subtitle">Cartão de crédito<img src="img/visa.png" /></div>
-                        <div class="title" id="cardName">Santander Smiles Gold</div>
+                        <div class="subtitle">Cartão de crédito
+                            <img title="Bandeira do cartão" alt="Bandeira do cartão" src="img/visa.png" />
+                        </div>
+                        <h1 class="title" id="cardName">Santander Smiles Gold</h1>
                         <div class="rating">
                             <div class="rating-stars">
                                 <div class="star"></div>
@@ -111,10 +111,10 @@
                 <div class="col-md-4 col-sm-12 card-discover">
                     <div class="card-discover-content">
                         <div class="card-discover-arrow">Economize tempo e descubra suas chances de aprovação</div>
-                        <a href="#" class="button">
+                        <a href="#" title="Descubra suas chances" class="button">
                             <div class="button-content">
                                 <div class="icon">
-                                    <img src="img/branco.png" />
+                                    <img src="img/cadeado-branco.png" title="Ícone cadeado" title="Ícone cadeado" />
                                 </div>
                                 <div class="text">Descubra suas chances</div>
                             </div>
@@ -123,9 +123,9 @@
                         <div class="card-discover-people">
                             <div class="item">
                                 <div class="content">
-                                    <div class="people"><img src="https://placeimg.com/50/50/people"></div>
-                                    <div class="people"><img src="https://placeimg.com/50/50/people"></div>
-                                    <div class="people"><img src="https://placeimg.com/50/50/people"></div>
+                                    <div class="people"><img src="img/people.jpg" title="Perfil 01" title="Perfil 01"></div>
+                                    <div class="people"><img src="img/people.jpg" title="Perfil 02" title="Perfil 02"></div>
+                                    <div class="people"><img src="img/people.jpg" title="Perfil 03" title="Perfil 03"></div>
                                     <div class="count">+10 mil</div>
                                 </div>
                             </div>
@@ -141,37 +141,37 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-3 col-xs-6 card-features-item">
                             <div class="image">
-                                <img src="img/info.png">
+                                <img src="img/informacao.png" title="Ícone informação" alt="Ícone informação"/>
                             </div>
                             <div class="content">
-                                <div class="title">Anuidade</div>
+                                <h3 class="title">Anuidade</h3>
                                 <p id="annuity">4x R$ 88,50</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6 card-features-item">
                             <div class="image">
-                                <img src="img/info.png">
+                                <img src="img/informacao.png" title="Ícone informação" alt="Ícone informação"/>
                             </div>
                             <div class="content">
-                                <div class="title">Renda mínima</div>
+                                <h3 class="title">Renda mínima</h3>
                                 <p id="minimumIncome">R$ 1.500</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6 card-features-item">
                             <div class="image">
-                                <img src="img/app.png">
+                                <img src="img/aplicativo.png" title="Ícone aplicativo" alt="Ícone aplicativo"/>
                             </div>
                             <div class="content">
-                                <div class="title">Aplicativo</div>
+                                <h3 class="title">Aplicativo</h3>
                                 <p>para controlar seus gastos </p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6 card-features-item">
                             <div class="image">
-                                <img src="img/milhas.png">
+                                <img src="img/milhas-aereas.png" title="Ícone milhas aéreas" alt="Ícone milhas aéreas"/>
                             </div>
                             <div class="content">
-                                <div class="title">Milhas aéreas</div>
+                                <h3 class="title">Milhas aéreas</h3>
                                 <p>pelo programa Smiles</p>
                             </div>
                         </div>
@@ -180,35 +180,32 @@
                 <div class="col-md-4 col-sm-12">
                     <div class="card-score">
                         <div class="image">
-                            <img src="img/3.png">
+                            <img src="img/score-credito.png" title="Ícone score de crédito" alt="Ícone score de crédito"/>
                         </div>
                         <div class="content">
                             <p>Score de crédito necessário</p>
-                            <p><span>Médio, </span><a href="#">descubra seu score</a></p>
+                            <p><span>Médio, </span><a href="#" title="Descubra seu score">descubra seu score</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="benefit">
             <div class="benefit-item">
                 <div class="benefit-item-content">
-                    <div class="title">Cartão sem Anuidade</div>
+                    <h2 class="title">Cartão sem Anuidade</h2>
                     <p>Inúmeras vantagens, facilidades e você pode ficar livre de anuidade.</p>
                 </div>
                 <div class="benefit-item-footer">
                     <div class="benefit-item-footer-bank">Santander</div>
-                    <a href="#" class="button-small">Abrir</a>
+                    <a href="#" title="Abrir" class="button-small transition">Abrir</a>
                 </div>
             </div>
         </section>
     </div>
-    <!-- build:js js/index.min.js -->
     <script src="js/tiny-slider.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/app.js"></script>
-    <!-- endbuild -->
+    <script src="js/dist/app.js"></script>
 </body>
 
 </html>

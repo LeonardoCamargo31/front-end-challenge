@@ -34,20 +34,26 @@
             color: #646464;
             line-height: 33px;
         }
-        .button-small{
-            padding: 9px 0px;
-            min-width: 200px;
-            float: right;
-            background-color: $color-blue-secondary;
-            border-radius: 3px;
-            font-size: 15px;
-            color: #fff;
-            font-weight: 700;
-            text-align: center;
-            text-transform: uppercase;
-        }
     }
 }
+
+.button-small{
+    padding: 9px 0px;
+    min-width: 200px;
+    float: right;
+    background-color: $color-blue-secondary;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover{
+        color: #fff;
+        background-color: $color-blue;
+    }
+}
+
 
 //tamanho maximo 1200px
 @media screen and (max-width: $break-large) {
@@ -87,11 +93,11 @@
                 float: left;
                 width: 50%;
             }
-            .button-small{
-                float: left;
-                min-width: auto;
-                width: 50%;
-            }
+        }
+        .button-small{
+            float: left;
+            min-width: auto;
+            width: 50%;
         }
     }
 }

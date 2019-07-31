@@ -7,11 +7,14 @@ $break-large: 1280px;
 
 $color-blue:#1565c0;
 $color-blue-secondary:#0053f9;
+$color-black:rgba(0,0,0,0.87);
+$color-black-secondary:rgba(0, 0, 0, 0.38);
+$color-red:#f4511e;
 
 .transition{
     transition: all .3s;
 }
-
+ 
 @import "_reset.scss";
 @import "_font.scss";
 

@@ -51,8 +51,7 @@
     }
   }
 
-  .sub-menu {
-    transition: all .3s;
+  .sub-menu {     
     z-index: 99;
     position: absolute;
     top: 100%;
@@ -98,7 +97,6 @@
 
   .sub-menu.selected {
     display: block;
-    transition: transform 0.2s;
   }
 }
 
