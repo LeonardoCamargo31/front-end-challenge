@@ -10,7 +10,6 @@ var api = async function api() {
     return fetch(url, options).then(function (resp) {
         return resp.json();
     }).then(function (data) {
-        console.log('data', data);
         return data;
     }).catch(function (err) {
         return console.log('error', err);
@@ -30,7 +29,6 @@ var processMoney = function processMoney(money) {
 };
 
 var data = api().then(function (response) {
-    console.log(response);
     var cardName = document.getElementById('cardName');
     var cardImage = document.getElementById('cardImage');
     var totalReviews = document.getElementById('totalReviews');
@@ -38,7 +36,10 @@ var data = api().then(function (response) {
     var minimumIncome = document.getElementById('minimumIncome');
     var stars = document.getElementsByClassName('rating-stars')[0];
 
+    //nome do cartão
     cardName.textContent = response.name;
+
+    //imagem do cartão
     cardImage.src = response.imageUrl;
 
     //estrelas

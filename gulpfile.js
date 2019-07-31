@@ -11,6 +11,7 @@ var jshintStylish = require('jshint-stylish')
 var csslint = require('gulp-csslint')
 var sass = require('gulp-sass')
 var babel  =require('gulp-babel')
+const htmlmin = require('gulp-htmlmin');
 
 var autoprefixerOptions = {
     browsers: ['last 2 versions'],
@@ -44,11 +45,16 @@ gulp.task('build-img', function () {
         .pipe(gulp.dest('dist/img'))
 })
 
+gulp.task('htmlmin', () => {
+    return gulp.src('dist/*.html')
+      .pipe(htmlmin({ collapseWhitespace: true }))
+      .pipe(gulp.dest('dist'));
+  });
 
 gulp.task('usemin', function () {
     gulp.src('dist/**/*.html')
         .pipe(usemin({
-            //js: [uglify],
+            js: [uglify],
             css: [autoprefixer, cssmin]
         }))
         .pipe(gulp.dest('dist'))

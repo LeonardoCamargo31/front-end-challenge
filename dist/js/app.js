@@ -7,10 +7,7 @@ const options = {
 const api = async () => {
     return fetch(url, options)
         .then((resp) => resp.json())
-        .then(function (data) {
-            console.log('data', data)
-            return data
-        })
+        .then((data) => data)
         .catch((err) => console.log('error', err))
 }
 
@@ -23,12 +20,11 @@ const processStars = (rating) => {
     return newStars
 }
 
-const processMoney=(money)=>{
-    return "R$ "+money.toLocaleString('pt-BR')
+const processMoney = (money) => {
+    return "R$ " + money.toLocaleString('pt-BR')
 }
 
 const data = api().then(response => {
-    console.log(response)
     var cardName = document.getElementById('cardName')
     var cardImage = document.getElementById('cardImage')
     var totalReviews = document.getElementById('totalReviews')
@@ -36,7 +32,10 @@ const data = api().then(response => {
     var minimumIncome = document.getElementById('minimumIncome')
     var stars = document.getElementsByClassName('rating-stars')[0]
 
+    //nome do cartão
     cardName.textContent = response.name
+
+    //imagem do cartão
     cardImage.src = response.imageUrl
 
     //estrelas
@@ -54,5 +53,4 @@ const data = api().then(response => {
     //Renda mínima
     var money = processMoney(response.valueOfMinimalIncomeRequired)
     minimumIncome.textContent = money
-
 });
