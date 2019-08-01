@@ -1,6 +1,6 @@
 'use strict';
 
-var url = "http://www.mocky.io/v2/5d164fc10e00001730a118b8";
+var url = "https://www.mocky.io/v2/5d164fc10e00001730a118b8";
 
 var options = {
     method: 'GET',
