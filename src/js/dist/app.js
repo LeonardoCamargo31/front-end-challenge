@@ -3,8 +3,7 @@
 var url = "https://www.mocky.io/v2/5d164fc10e00001730a118b8";
 
 var options = {
-    method: 'GET',
-    mode: 'no-cors'
+    method: 'GET'
 };
 
 var api = async function api() {

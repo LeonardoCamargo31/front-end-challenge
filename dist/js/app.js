@@ -2,7 +2,6 @@ const url = "https://www.mocky.io/v2/5d164fc10e00001730a118b8"
 
 const options = {
     method: 'GET',
-    mode: 'no-cors'
 }
 
 const api = async () => {
